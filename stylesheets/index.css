@@ -10,7 +10,6 @@ body{
     float:left;
 }
 .row{
-    text-align:center !important;
     width:100% !important;
     margin: 0px !important;
     padding:0px !important;
@@ -22,7 +21,26 @@ body{
     width:100%;
     height:60px;
 }
-/* ^^^^ BASICS NEEDED TO GET DIVS TO STRETCH TO WHOLE PAGE, STACK UP EVENLY, AND SOME OTHER STUFF*/
+.navbar-nav{
+  width:100%;
+}
+.navbar-form.navbar-right{
+  float:right;
+  width:100%;
+}
+.navbar-nav li:hover{
+  background-color:darkgray;
+}
+button{
+  float:right;
+  width:100%;
+  height:100%;
+  border-radius:0px;
+  background-color:navy blue;
+  color:white;
+  font-size:16px;
+}
+/* ^^^^ BASICS NEEDED TO GET DIVS TO STRETCH TO WHOLE PAGE, STACK UP EVENLY, NAVBAR, MISC...*/
 #blank{
     height:400px;
 }
