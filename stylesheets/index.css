@@ -1,32 +1,36 @@
 body{
-    margin:0px;
-    padding:0px;
-    color:black;
+  margin:0px;
+  padding:0px;
+  color:black;
 }
 .container{
-    width:100% !important;
-    margin:0px !important;
-    padding:0px !important;
-    float:left;
+  width:100% !important;
+  margin:0px !important;
+  padding:0px !important;
+  float:left;
 }
 .row{
-    width:100% !important;
-    margin: 0px !important;
-    padding:0px !important;
+  width:100% !important;
+  height:100% !important;
+  margin: 0px !important;
+  padding:0px !important;
 }
 #header{
-    background-color:lightgray;
-    margin:0px;
-    padding:0px;
-    width:100%;
-    height:60px;
+  background-color:lightgray;
+  margin:0px;
+  padding:0px;
+  width:100%;
+  height:60px;
 }
 .navbar-nav{
   width:100%;
 }
 .navbar-form.navbar-right{
   float:right;
+  height:100%;
   width:100%;
+  margin:5px;
+  padding:0px;
 }
 .navbar-nav li:hover{
   background-color:darkgray;
@@ -34,14 +38,47 @@ body{
 button{
   float:right;
   width:100%;
-  height:100%;
+  height:40px;
   border-radius:0px;
-  background-color:navy blue;
-  color:white;
-  font-size:16px;
+  background-color:#1F497D;
+  color:white !important;
+  font-size:25px !important;
 }
+
+
+
 /* ^^^^ BASICS NEEDED TO GET DIVS TO STRETCH TO WHOLE PAGE, STACK UP EVENLY, NAVBAR, MISC...*/
-#blank{
-    height:400px;
+#mainImage{
+  background-image: url('../images/index_background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:800px;
+  margin:0px;
+  padding:0px;
+  margin-top:50px;
+}
+#whiteLine{
+  width:50%;
+  height:5px;
+  background-color:white;
+  margin-left:25%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0	3px 6px black;
+
+}
+.blank{
+    background-color:white;
+    height:600px;
+}
+.blue{
+  background-color:#1F497D;
+  height:600px;
+  text-align:center;
+  color:white;
+}
+#WhoWeAre{
+  margin-left:10%;
+  margin-right:10%;
 }
 
