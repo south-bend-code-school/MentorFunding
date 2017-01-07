@@ -116,3 +116,13 @@ button{
   text-align:left;
   font-size:25px;
 }
+.connect_image{
+  height:100px;
+  width:100px;
+  margin-left:50px;
+  margin-right:50px;
+}
+.bottom_text{
+  margin-bottom:20px;
+  font-size:25px;
+}
