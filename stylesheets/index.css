@@ -63,13 +63,27 @@ button{
   margin-left:25%;
   margin-top: 30px;
   margin-bottom: 30px;
-  box-shadow: 0	3px 6px black;
-
+  box-shadow: 0	1px 6px black;
 }
-.blue{
+#whiteLine2{
+  width:95%;
+  height:4px;
+  background-color:white;
+  margin-left:2.5%;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  box-shadow: 0	1px 6px black;
+}
+#blue{
   background-color:#1F497D;
   height:600px;
   text-align:center;
+  color:white;
+}
+#blue2{
+  background-color:#1F497D;
+  height:400px;
+  text-align:left;
   color:white;
 }
 #WhoWeAre{
