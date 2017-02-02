@@ -3,6 +3,7 @@ body{
   padding:0px;
   color:black;
   height:100%;
+  background-color:lightgray;
 }
 .container{
   width:100% !important;
@@ -131,7 +132,6 @@ button{
   height:800px;
   margin:0px;
   padding:0px;
-  margin-top:50px;
   text-align:center;
   color:white;
 }
