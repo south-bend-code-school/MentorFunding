@@ -3,7 +3,7 @@ body{
   padding:0px;
   color:black;
   height:100%;
-  background-color:lightgray;
+  background-color:#f8f8f8;
 }
 .container{
   width:100% !important;
@@ -17,7 +17,7 @@ body{
   padding:0px !important;
 }
 #header{
-  background-color:lightgray;
+  background-color:#f8f8f8;
   margin:0px;
   padding:0px;
   width:100%;

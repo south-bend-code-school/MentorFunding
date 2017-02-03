@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Mentor Funding - Sign In</title>
+    <title>Mentor Funding - Start Application</title>
     <!--Firebase-->
     <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
     <!--JS-->
-    <script src="../javascripts/signIn.js"></script> 
+    <script src="../javascripts/startApplication.js"></script> 
     <!--CSS file-->
-    <link href="../stylesheets/signIn.css" rel="stylesheet" type="text/css">
+    <link href="../stylesheets/startApplication.css" rel="stylesheet" type="text/css">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
@@ -32,7 +32,7 @@
 
 <body>
 <!--Menu Bar at top-->
-<nav class="navbar navbar-default navbar-fixed-top" style="background-color:white;">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="row">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header col-md-3">
@@ -44,49 +44,31 @@
       </button>-->
       <a href="#"><img src="../images/MentorFundingLogo.png"></a>
     </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="col-md-7">
-      <ul class="nav navbar-nav">
-        <li><a href="#"><h4 class="headerText" style="margin-left:50px;"><strong>Refinance Student Loans</strong></h4></a></li>
-        <li><a href="#"><h4 class="headerText"><strong>Mentorship</strong></h4></a></li>
-        <li><a href="#"><h4 class="headerText"><strong>Eligibility</strong></h4></a></li>
-        <li><a href="#"><h4 class="headerText"><strong>Help</strong></h4></a></li>
-        <li><a href="#"><h4 style="color:gray; font-size:15px;"><strong>About Us</strong></h4></a></li>
-      </ul> 
-    </div><!-- /.navbar-collapse -->
-    <div class="col-md-2"></div>
+    <div class="col-md-offset-5 col-md-2">
+      <h1 id="helpText">Need Help?</h1>
+    </div>
+    <div class="col-md-2">
+      <div class="navbar-form navbar-right">
+        <button id="signIn">Sign In</button>
+      </div>
+    </div> 
   </div><!-- /.container-fluid -->
 </nav>
 
-<!--Main image-->
-<div style="background-color:#f8f8f8;"class="row">
-  <div class="col-md-12">
-    <div class="row">
-      <div class="col-md-offset-2 col-md-8" style="margin-top:200px;">
-        <div id="signInText">
-          <h1 style="color:#1F497D; font-size:50px;"><strong>Sign In</strong></h1>
-        </div>
-        <div id="outer">
-          <div class="inner">
-            <h3 class="text"><strong>Email</strong></h3><div class="form"><input type="email" class="form-control" id="emailTxt" placeholder="Enter Email"></div>
-          </div>
-          <div class="inner" style="padding-bottom:30px;">
-            <h3 class="text"><strong>Password</strong></h3><div class="form"><input type="password" class="form-control" id="passwordTxt" placeholder="Enter Password"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-offset-2 col-md-8" style="padding-top:30px;">
-            <a href="#"><p id="questionText">Forgot Password?</p></a><button id="signIn">Sign In</button> 
-        </div>
-      </div>
-    </div>
-  </div>
+<!--Title-->
+<div class="col-md-8" style="padding-top:100px; background-color:#f8f8f8;">
+  <h1>Enter Personal Information</h1>
+  <p>Enter your personal information to determine your eligibility for a loan</p>
 </div>
 
-</body>
-
-</html>
+<!--Profile progress bar-->
+<div class="col-md-4">
+  <div id="infoBox">
+    <div class="row"><h1>PROFILE</h1></div>
+    <div class="row"><h1>Enter Personal Info</h1></div>
+    <div class="row"><h1>Enter School Info</h1></div>
+    <div class="row"><h1>Enter Work Info</h1></div>
+  </div>
+</div>
 
 
