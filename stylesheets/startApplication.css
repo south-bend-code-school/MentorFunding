@@ -53,9 +53,61 @@ button{
 }
 /* ^^^^ BASICS NEEDED TO GET DIVS TO STRETCH TO WHOLE PAGE, STACK UP EVENLY, NAVBAR, MISC...*/
 
-#infoBox{
+.profileInfoActive{
+  border: white solid 2px;
+  background-color:#1F497D;
+  height:80px;
+  padding-right:10px;
+  padding-top:20px !important;
+  padding-left:10px !important;
+}
+.profileInfo{
+  border: #1F497D solid 2px;
   background-color:white;
-  padding-top:100px;
-  padding-right:100px;
+  padding-right:10px;
+  height:80px;
+  padding-top:20px !important;
+  padding-left:10px !important;
+}
+.numCirclesActive{
+  border-radius:50%;
+  display:inline-block; 
+  width:42px; 
+  height:42px;
+  padding-top:3px;
+  background: #1F497D;
+  box-shadow:0px 0px 4px;
+  border: 1px solid white;
+  color: white;
+  text-align:center;
+  font-size:25px;
+}
+
+.numCircles{
+  border-radius:50%;
+  display:inline-block; 
+  width:42px; 
+  height:42px;
+  padding-top:3px;
+  background: white;
+  box-shadow:0px 0px 4px;
+  border: 1px solid #1F497D;
+  color: #1F497D;
+  text-align:center;
+  font-size:25px;
+}
+.numCirclesTextActive{
+  display:inline-block;
+  padding-left:20px;
+  color:white;
+  font-size:25px;
+  font-weight:bold;
+}
+.numCirclesText{
+  display:inline-block;
+  padding-left:20px;
+  color:#1F497D;
+  font-size:25px;
+  font-weight:bold;
 }
 
