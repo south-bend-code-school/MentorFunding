@@ -15,6 +15,7 @@ body{
   width:100% !important;
   margin: 0px !important;
   padding:0px !important;
+  height: 100% !important;
 }
 #header{
   background-color:lightgray;
@@ -110,4 +111,9 @@ button{
   font-size:25px;
   font-weight:bold;
 }
-
+#main{
+  background-color:white;
+  border:solid #1F497D 2px; 
+  height:800px;
+  box-shadow:0px 0px 4px;
+}
