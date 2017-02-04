@@ -1,0 +1,187 @@
+body{
+  margin:0px;
+  padding:0px;
+  padding-bottom:30px;
+  color:black;
+  height:100%;
+  background-color:lightgray;
+}
+.container{
+  width:100% !important;
+  margin:0px !important;
+  padding:0px !important;
+  float:left;
+}
+.row{
+  width:100% !important;
+  margin: 0px !important;
+  padding:0px !important;
+  height: 100% !important;
+}
+#header{
+  background-color:lightgray;
+  margin:0px;
+  padding:0px;
+  width:100%;
+  height:60px;
+}
+.navbar-nav{
+  width:100%;
+}
+.navbar-form.navbar-right{
+  float:right;
+  height:100%;
+  width:100%;
+  margin:5px;
+  padding:0px;
+}
+.navbar-nav li:hover{
+  background-color:darkgray;
+}
+button{
+  float:right;
+  width:100%;
+  height:60px;
+  border-radius:0px;
+  background-color:#1F497D;
+  color:white !important;
+  font-size:35px !important;
+}
+#helpText{
+  font-size:25px;
+  color:gray;
+  font-weight:bold;
+  padding-left:60px;
+}
+/* ^^^^ BASICS NEEDED TO GET DIVS TO STRETCH TO WHOLE PAGE, STACK UP EVENLY, NAVBAR, MISC...*/
+
+.profileInfoActive{
+  border: white solid 2px;
+  background-color:#1F497D;
+  height:80px;
+  padding-right:10px;
+  padding-top:20px !important;
+  padding-left:10px !important;
+}
+.profileInfo{
+  border: #1F497D solid 2px;
+  background-color:white;
+  padding-right:10px;
+  height:80px;
+  padding-top:20px !important;
+  padding-left:10px !important;
+}
+.numCirclesActive{
+  border-radius:50%;
+  display:inline-block; 
+  width:42px; 
+  height:42px;
+  padding-top:3px;
+  background: #1F497D;
+  box-shadow:0px 0px 4px;
+  border: 1px solid white;
+  color: white;
+  text-align:center;
+  font-size:25px;
+}
+
+.numCircles{
+  border-radius:50%;
+  display:inline-block; 
+  width:42px; 
+  height:42px;
+  padding-top:3px;
+  background: white;
+  box-shadow:0px 0px 4px;
+  border: 1px solid #1F497D;
+  color: #1F497D;
+  text-align:center;
+  font-size:25px;
+}
+.numCirclesTextActive{
+  display:inline-block;
+  padding-left:20px;
+  color:white;
+  font-size:25px;
+  font-weight:bold;
+}
+.numCirclesText{
+  display:inline-block;
+  padding-left:20px;
+  color:#1F497D;
+  font-size:25px;
+  font-weight:bold;
+}
+#main{
+  padding-left:10px;
+  background-color:white;
+  border:solid #1F497D 2px; 
+  box-shadow:0px 0px 6px;
+}
+.mainInfoText{
+  color:gray;
+  font-size:20px;
+  display:inline-block;
+  padding-left:10px;
+  padding-right:200px;
+  padding-top:5px;
+  padding-bottom:30px;
+}
+.form{
+  display:inline-block;
+  border: solid #1F497D 1px;
+  box-shadow: 0px 0px 6px;
+  width:60%;
+  height:40px;
+  padding-bottom:30px;
+}
+#createAccount{
+  border:solid #1F497D 2px;
+  box-shadow:0px 0px 6px;
+  padding-left:10px;
+  padding-right:20px;
+  padding-bottom:20px;
+}
+#citizen{
+  display:inline-block;
+  width:40px;
+  height:40px;
+  border: solid #1F497D 1px;
+  box-shadow: 0px 0px 6px;
+  
+}
+#citizenText{
+  display:inline-block;
+  font-size:20px;
+  padding-left:50px;
+  color:gray;
+}
+#consent{
+  display:inline-block;
+  width:40px;
+  height:40px;
+  border: solid #1F497D 1px;
+  box-shadow: 0px 0px 6px;
+  
+}
+#consentText{
+  display:inline-block;
+  font-size:20px;
+  color:gray;
+  width:500px;
+  height:100px;
+  padding-left:30px;
+}
+#bottomText{
+  font-size:20px;
+  color: #1F497D;
+  display:inline-block;
+}
+#continueBtn{
+  display:inline-block;
+  width:35%;
+  height:40px;   
+  font-size:20px !important;
+  font-weight:bold;
+  text-align:center;
+}
