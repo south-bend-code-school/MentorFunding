@@ -1,6 +1,7 @@
 body{
   margin:0px;
   padding:0px;
+  padding-bottom:30px;
   color:black;
   height:100%;
   background-color:lightgray;
@@ -50,7 +51,7 @@ button{
   font-size:25px;
   color:gray;
   font-weight:bold;
-  padding-left:80px;
+  padding-left:60px;
 }
 /* ^^^^ BASICS NEEDED TO GET DIVS TO STRETCH TO WHOLE PAGE, STACK UP EVENLY, NAVBAR, MISC...*/
 
@@ -112,8 +113,75 @@ button{
   font-weight:bold;
 }
 #main{
+  padding-left:10px;
   background-color:white;
   border:solid #1F497D 2px; 
-  height:800px;
-  box-shadow:0px 0px 4px;
+  box-shadow:0px 0px 6px;
+}
+.mainInfoText{
+  color:gray;
+  font-size:20px;
+  display:inline-block;
+  padding-left:10px;
+  padding-right:200px;
+  padding-top:5px;
+  padding-bottom:30px;
+}
+.form{
+  display:inline-block;
+  border: solid #1F497D 1px;
+  box-shadow: 0px 0px 6px;
+  width:60%;
+  height:40px;
+  padding-bottom:30px;
+}
+#createAccount{
+  border:solid #1F497D 2px;
+  box-shadow:0px 0px 6px;
+  padding-left:10px;
+  padding-right:20px;
+  padding-bottom:20px;
+}
+#citizen{
+  display:inline-block;
+  width:40px;
+  height:40px;
+  border: solid #1F497D 1px;
+  box-shadow: 0px 0px 6px;
+  
+}
+#citizenText{
+  display:inline-block;
+  font-size:20px;
+  padding-left:50px;
+  color:gray;
+}
+#consent{
+  display:inline-block;
+  width:40px;
+  height:40px;
+  border: solid #1F497D 1px;
+  box-shadow: 0px 0px 6px;
+  
+}
+#consentText{
+  display:inline-block;
+  font-size:20px;
+  color:gray;
+  width:500px;
+  height:100px;
+  padding-left:30px;
+}
+#bottomText{
+  font-size:20px;
+  color: #1F497D;
+  display:inline-block;
+}
+#continueBtn{
+  display:inline-block;
+  width:35%;
+  height:40px;   
+  font-size:20px !important;
+  font-weight:bold;
+  text-align:center;
 }

@@ -55,28 +55,62 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<!--Title-->
-<div class="col-md-8" style="padding-top:100px; background-color:#f8f8f8;">
-  <h1 style="color:#1F497D; margin:0px;"><strong>Enter Personal Information</strong></h1>
-  <h3 style="color:#1F497D; margin:0px;">Enter your personal information to determine your eligibility for a loan</h3>
-</div>
-
-<!--Personal information write up-->
-<div class="col-md-6" id="main">
-  
-
-</div>
-
-<!--Profile progress bar-->
-<div class="col-md-4" style="padding-top:100px; padding-left:50px; background-color:#f8f8f8">
-  <div>
-    <div class="profileInfo"><div class="numCirclesText">PROFILE</div></div>
-    <div class="profileInfoActive"><div class="numCirclesActive">1</div><div class="numCirclesTextActive">Enter Personal Info</div></div>
-    <div class="profileInfo"><div class="numCircles">2</div><div class="numCirclesText">Enter School Info</div></div>
-    <div class="profileInfo"><div class="numCircles">3</div><div class="numCirclesText">Enter Work Info</div></div>
+<div class="row">
+  <div class="col-md-8" style="padding-top:100px; background-color:#f8f8f8; display:block;">
+      <!--Title-->
+      <h1 style="color:#1F497D; margin:0px;"><strong>Enter Personal Information</strong></h1>
+      <h3 style="color:#1F497D; margin:0px; padding-bottom:25px;">Enter your personal information to determine your eligibility for a loan</h3>
+    <form>
+      <!--Personal information write up-->
+      <div id="main"> 
+        <h2 style="font-size:25px;"><strong>PERSONAL INFORMATION</strong></h2>
+        <p><i>We value your privacy. All information is completely confidential. View our </i><a href="#">Privacy Ppolicy</a></p>
+        <div class="form-group">
+          <div class="mainInfoText" style="padding-right:220px">First Name</div><div class="form"><input class="form-control" style="border:none; font-size:20px;" id="firstName" placeholder="Enter First Name"></div>
+          <div class="mainInfoText">Middle Name</div><div class="form"><input class="form-control" style="border:none; font-size:20px;" id="middleName" placeholder="Enter Middle Name"></div>
+          <div class="mainInfoText" style="padding-right:220px;">Last Name</div><div class="form"><input class="form-control" style="border:none; font-size:20px;" id="lastName" placeholder="Enter Last Name"></div>
+          <div class="mainInfoText" style="padding-right:110px">Primary Phone Number</div><div class="form"><input class="form-control" style="border:none; font-size:20px;" id="phoneNum" placeholder="(XXX) XXX - XXXX"></div>
+          <div class="mainInfoText" style="padding-right:190px;">Street Address</div><div class="form"><input class="form-control" style="border:none; font-size:20px;" id="streetAddress" placeholder="Enter Street Address"></div>
+          <div class="mainInfoText" style="padding-right:290px;">City</div><div class="form"><input class="form-control" style="border:none; font-size:20px;" id="city" placeholder="Enter City Name"></div>
+          <div class="mainInfoText" style="padding-right:280px;">State</div><div class="form">
+            <select class="form-control" style="border:none; font-size:20px;" id="state">
+              <script>
+                  var states = ["AL","AK","AS","AZ","AR","CA","CO","CT","DE","DC","FL","GA","HI","ID","IL","IN","IA","KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ","NM","NY","NC","ND","OH","OK","OR","PA","PR","RI","SC","SD","TN","TX","UT","VT","VA","WA","WV","WI","WY"];
+                  var i=0; 
+                  for(i;i<states.length;i++){
+                      document.write("<option>"+states[i]+"</option>");
+                  }
+              </script>
+            </select>
+          </div>
+          <div class="mainInfoText" style="padding-right:240px;">Zip Code</div><div class="form"><input class="form-control" style="border:none; font-size:20px;" id="zipCode" placeholder="XXXXX"></div>
+          <div class="mainInfoText" style="padding-right:210px;">Date of Birth</div><div class="form"><input class="form-control" style="border:none; font-size:20px;" id="DOB" placeholder="MM / DD / YYYY"></div>
+          <div class="mainInfoText" style="padding-right:160px;">Citizenship Status</div><div id="citizen"></div><div id="citizenText">I am a U.S. citizen or permanent resident</div>
+          <div class="mainInfoText" style="padding-right:160px;">Home Ownership</div><div class="form"><select class="form-control" style="border:none; font-size:20px;" id="homeOwner"><option>Home Owner</option><option>Renting</option><option>Other</option></select></div>
+        </div>
+      </div>
+      <!--Gap-->
+      <div style="height:50px;"></div>
+      <!--Create an account-->
+      <div id="createAccount">
+        <h2 style="font-size:25px;"><strong>CREATE ACCOUNT</strong></h2> 
+        <div class="mainInfoText" style="padding-right:250px">Email</div><div class="form"><input type="email" class="form-control" style="border:none; font-size:20px" id="emailTxt" placeholder="Enter Email"></div>
+        <div class="mainInfoText" style="padding-right:140px">Create Passoword</div><div class="form"><input type="password" class="form-control" style="border:none; font-size:20px" id="passwordTxt" placeholder="Enter Password"></div>
+        <div class="mainInfoText" style="padding-right:230px;">Consent</div><div id="consent"></div><div id="consentText">I have read, understood, and consented to the language and authorization outline in <a href="#">Mentor Funding's Privacy & Security Policy.</a></div>
+        <h3 id="bottomText">Already Have Account? Sign In</h3><button type="submit" id="continueBtn">CONTINUE</button>
+      </div>
+    </form>     
+  </div>
+  <!--Profile progress bar-->
+  <div class="col-md-4" style="padding-top:100px; padding-left:100px; background-color:#f8f8f8">
+    <div>
+      <div class="profileInfo"><div class="numCirclesText">PROFILE</div></div>
+      <div class="profileInfoActive"><div class="numCirclesActive">1</div><div class="numCirclesTextActive">Enter Personal Info</div></div>
+      <div class="profileInfo"><div class="numCircles">2</div><div class="numCirclesText">Enter School Info</div></div>
+      <div class="profileInfo"><div class="numCircles">3</div><div class="numCirclesText">Enter Work Info</div></div>
+    </div>
   </div>
 </div>
-
 
 </body>
 </html>
