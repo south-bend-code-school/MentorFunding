@@ -84,7 +84,6 @@ button{
   text-align:center;
   font-size:25px;
 }
-
 .numCircles{
   border-radius:50%;
   display:inline-block; 
@@ -111,6 +110,9 @@ button{
   color:#1F497D;
   font-size:25px;
   font-weight:bold;
+}
+.checkMark{
+
 }
 #main{
   padding-left:10px;

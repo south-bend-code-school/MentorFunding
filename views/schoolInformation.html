@@ -11,7 +11,7 @@
     <!--JS-->
     <script src="../javascripts/schoolInformation.js"></script> 
     <!--CSS file-->
-    <link href="../stylesheets/schoolInformation.css" rel="stylesheet" type="text/css">
+    <link href="../stylesheets/information.css" rel="stylesheet" type="text/css">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
@@ -58,13 +58,13 @@
 <div class="row">
   <div class="col-md-8" style="padding-top:100px; background-color:#f8f8f8; display:block;">
       <!--Title-->
-      <h1 style="color:#1F497D; margin:0px;"><strong>Enter Personal Information</strong></h1>
-      <h3 style="color:#1F497D; margin:0px; padding-bottom:25px;">Enter your personal information to determine your eligibility for a loan</h3>
+      <h1 style="color:#1F497D; margin:0px;"><strong>Enter School Information</strong></h1>
+      <h3 style="color:#1F497D; margin:0px; padding-bottom:25px;">Enter your school information to determine your eligibility for a loan</h3>
     <form>
       <!--Personal information write up-->
       <div id="main"> 
-        <h2 style="font-size:25px;"><strong>PERSONAL INFORMATION</strong></h2>
-        <p><i>We value your privacy. All information is completely confidential. View our </i><a href="#">Privacy Ppolicy</a></p>
+        <h2 style="font-size:25px;"><strong>SCHOOL INFORMATION</strong></h2>
+        <p><i>We value your privacy. All information is completely confidential. View our </i><a href="#">Privacy Policy</a></p>
         <div class="form-group">
           <div class="mainInfoText" style="padding-right:220px">First Name</div><div class="form"><input class="form-control" style="border:none; font-size:20px;" id="firstName" placeholder="Enter First Name"></div>
           <div class="mainInfoText">Middle Name</div><div class="form"><input class="form-control" style="border:none; font-size:20px;" id="middleName" placeholder="Enter Middle Name"></div>
@@ -102,13 +102,20 @@
     </form>     
   </div>
   <!--Profile progress bar-->
-  <div class="col-md-4" style="padding-top:100px; padding-left:100px; background-color:#f8f8f8">
+  <div class="col-md-4" style="padding-top:100px; padding-left:60px; background-color:#f8f8f8">
     <div>
       <div class="profileInfo"><div class="numCirclesText">PROFILE</div></div>
-      <div class="profileInfoActive"><div class="numCirclesActive">1</div><div class="numCirclesTextActive">Enter Personal Info</div></div>
-      <div class="profileInfo"><div class="numCircles">2</div><div class="numCirclesText">Enter School Info</div></div>
+      <div class="profileInfo" style="padding-top:0px !important; padding-left:0px !important;padding-right:20px;"><img class="checkMark" src="../images/check_mark.png"><div class="numCirclesText" style="padding-left:0px !important;">Enter Personal Info</div></div>
+      <div class="profileInfoActive"><div class="numCirclesActive">2</div><div class="numCirclesTextActive">Enter School Info</div></div>
       <div class="profileInfo"><div class="numCircles">3</div><div class="numCirclesText">Enter Work Info</div></div>
     </div>
+    <div style="padding-top:40px;">
+      <div class="profileInfo"><div class="numCirclesText">APPLICATION</div></div>
+      <div class="profileInfo"><div class="numCircles">4</div><div class="numCirclesText">Loan Information</div></div>
+      <div class="profileInfo"><div class="numCircles">5</div><div class="numCirclesText">Get Rate</div></div>
+      <div class="profileInfo"><div class="numCircles">6</div><div class="numCirclesText">Upload Documents & Apply</div></div>
+    </div>  
+
   </div>
 </div>
 
