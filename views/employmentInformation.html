@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Mentor Funding - School</title>
+    <title>Mentor Funding - Employment Info</title>
     <!--Firebase-->
     <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
     <!--JS-->
-    <script src="../javascripts/schoolInformation.js"></script> 
+    <script src="../javascripts/employmentInformation.js"></script> 
     <!--CSS file-->
     <link href="../stylesheets/information.css" rel="stylesheet" type="text/css">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -58,26 +58,19 @@
 <div class="row">
   <div class="col-md-8" style="padding-top:100px; background-color:#f8f8f8; display:block;">
       <!--Title-->
-      <h1 style="color:#1F497D; margin:0px;"><strong>Enter School Information</strong></h1>
-      <h3 style="color:#1F497D; margin:0px; padding-bottom:25px;">Enter your school information to determine your eligibility for a loan</h3>
+      <h1 style="color:#1F497D; margin:0px;"><strong>Enter Work Information</strong></h1>
+      <h3 style="color:#1F497D; margin:0px; padding-bottom:25px;">Enter your work information to determine your eligibility for a loan</h3>
     <form>
       <!--Personal information write up-->
-      <div id="main" style="padding-bottom:10px;"> 
-        <h2 style="font-size:25px;"><strong>SCHOOL INFORMATION</strong></h2>
+      <div id="main"> 
+        <h2 style="font-size:25px;"><strong>EMPLOYMENT INFORMATION</strong></h2>
         <p><i>We value your privacy. All information is completely confidential. View our </i><a href="#">Privacy Policy</a></p>
         <div class="form-group">
-          <div class="check-box" id="cb"><input type="checkbox"><strong><i>I did not graduate from college or my college is not listed</i></strong></div>
-          <div class="mainInfoText" style="padding-right:90px">Undergraduate University</div><div class="form"><input class="form-control" style="border:none; font-size:20px;" id="school" placeholder="Type in school"></div>
+          <div class="mainInfoText" style="padding-right:90px;">Employer Name</div><div class="form"><input class="form-control" style="border:none; font-size:20px;" id="employerName" placeholder="Employer"></div>
+          <div class="check-box" id="selfEmployed"><input type="checkbox"><strong><i>Self Employed</i></strong></div>
+
           <div class="mainInfoText" style="padding-right:100px;">Undergraduate Program</div><div class="form"><input class="form-control" style="border:none; font-size:20px;" id="program" placeholder="Enter Program"></div>
           <div class="mainInfoText" style="padding-right:170px;">Graduation Date</div><div class="form" style="width:25%"><input class="form-control" style="border:none; font-size:20px;" id="gradMonth" placeholder="Month"></div><div style="display:inline-block; width:90px;"></div><div class="form" style="width:25%;"><input class="form-control" style="border:none; font-size:20px;" id="gradYear" placeholder="YYYY"></div>
-        </div>
-      </div>
-      <div id="main2">
-        <div class="form-group">
-          <!--second half-->
-          <div class="mainInfoText" style="padding-right:150px">Graduate University</div><div class="form"><input class="form-control" style="border:none; font-size:20px;" id="gradSchool" placeholder="Type in school"></div>
-          <div class="mainInfoText" style="padding-right:160px;">Graduate Program</div><div class="form"><input class="form-control" style="border:none; font-size:20px;" id="gradProgram" placeholder="Enter Program"></div>
-          <div class="mainInfoText" style="padding-right:180px;">Graduation Date</div><div class="form" style="width:25%"><input class="form-control" style="border:none; font-size:20px;" id="gradGradMonth" placeholder="Month"></div><div style="display:inline-block; width:90px;"></div><div class="form" style="width:25%;"><input class="form-control" style="border:none; font-size:20px;" id="gradYear" placeholder="YYYY"></div>
           <button type="submit" id="continueBtn">CONTINUE</button>
         </div>
       </div>
@@ -88,8 +81,8 @@
     <div>
       <div class="profileInfo"><div class="numCirclesText">PROFILE</div></div>
       <div class="profileInfo" style="padding-top:0px !important; padding-left:0px !important;padding-right:20px;"><img src="../images/check_mark.png"><div class="numCirclesText" style="padding-left:0px !important;">Enter Personal Info</div></div>
-      <div class="profileInfoActive"><div class="numCirclesActive">2</div><div class="numCirclesTextActive">Enter School Info</div></div>
-      <div class="profileInfo"><div class="numCircles">3</div><div class="numCirclesText">Enter Work Info</div></div>
+      <div class="profileInfo" style="padding-top:0px !important; padding-left:0px !important; padding-right:20px;"><img src="../images/check_mark.png"><div class="numCirclesText" style="padding-left:0px !important;">Enter School Info</div></div>
+      <div class="profileInfoActive"><div class="numCirclesActive">3</div><div class="numCirclesTextActive">Enter Work Info</div></div>
     </div>
     <div style="padding-top:40px;">
       <div class="profileInfo"><div class="numCirclesText">APPLICATION</div></div>
@@ -103,3 +96,4 @@
 
 </body>
 </html>
+
