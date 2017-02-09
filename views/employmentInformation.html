@@ -66,11 +66,27 @@
         <h2 style="font-size:25px;"><strong>EMPLOYMENT INFORMATION</strong></h2>
         <p><i>We value your privacy. All information is completely confidential. View our </i><a href="#">Privacy Policy</a></p>
         <div class="form-group">
-          <div class="mainInfoText" style="padding-right:90px;">Employer Name</div><div class="form"><input class="form-control" style="border:none; font-size:20px;" id="employerName" placeholder="Employer"></div>
+          <div class="mainInfoText" style="padding-right:180px;">Employer Name</div><div class="form"><input class="form-control" style="border:none; font-size:20px;" id="employerName" placeholder="Employer"></div>
           <div class="check-box" id="selfEmployed"><input type="checkbox"><strong><i>Self Employed</i></strong></div>
-
-          <div class="mainInfoText" style="padding-right:100px;">Undergraduate Program</div><div class="form"><input class="form-control" style="border:none; font-size:20px;" id="program" placeholder="Enter Program"></div>
-          <div class="mainInfoText" style="padding-right:170px;">Graduation Date</div><div class="form" style="width:25%"><input class="form-control" style="border:none; font-size:20px;" id="gradMonth" placeholder="Month"></div><div style="display:inline-block; width:90px;"></div><div class="form" style="width:25%;"><input class="form-control" style="border:none; font-size:20px;" id="gradYear" placeholder="YYYY"></div>
+          <div class="mainInfoText" style="padding-right:150px;">Employment Status</div><div class="form">
+            <select class="form-control" style="border:none; font-size:20px;" id="employmentStatus">
+              <option>Employed</option>
+              <option>Unemployed</option>
+              <option>Student</option>
+            </select>
+          </div>
+          <div class="mainInfoText" style="padding-right:190px;">Annual Income</div><div class="form"><input class="form-control" style="border:none; font-size:20px;" id="income" placeholder="$                Enter Annual Income (Not Household)"></div>
+          <div class="mainInfoText" style="padding-right:150px;">Total Years of Professional Work Experience</div><div class="form" style="width:330px;">
+            <select class="form-control" style="border:none; font-size:20px;" id="yearWork">
+              <script>
+                  var i=0; 
+                  for(i;i<=10;i++){
+                      if(i == 0) document.write("<option>"+"Less Than One Year"+"</option>");
+                      else document.write("<option>"+i+"-"+(i+1)+"</option>");
+                  }
+              </script>
+            </select>
+          </div>
           <button type="submit" id="continueBtn">CONTINUE</button>
         </div>
       </div>
