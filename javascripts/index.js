@@ -10,13 +10,18 @@ var config = {
 firebase.initializeApp(config);
 
 window.onload = function(){
+  //check if button pressed
+  document.getElementById('startApp').addEventListener('click', startApp, false);
+
   //get name to display at top instead of sign in
   firebase.auth().onAuthStateChanged( function(user) {
     if (user) {
       var name = user.email;
-      var display_name = name.split('@')[0];
+      var username = name.split("@")[0];
+      try{ username = username.split(".")[0];} catch (err) { console.log(err);}
+      user.updateProfile({displayName: username}).catch(function(error){console.log(error)}); 
       var html_name = document.getElementById('signIn');
-      html_name.innerHTML = display_name;
+      html_name.innerHTML = user.displayName;
       //show user name near login (get inner HTML of that div
       document.getElementById('signIn').addEventListener('click', userPage, false);
     } else {
@@ -32,4 +37,7 @@ function signIn(){
 function userPage(){
   window.location = "./views/userProfile.html";
 } 
+function startApp(){
+  window.location = "./views/personalInformation.html";
+}
 

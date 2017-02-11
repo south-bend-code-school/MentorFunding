@@ -152,6 +152,7 @@ button{
   padding-left:10px;
   padding-right:20px;
   padding-bottom:20px;
+  background-color: white;
 }
 #citizen{
   display:inline-block;
