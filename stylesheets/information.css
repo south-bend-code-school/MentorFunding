@@ -2,7 +2,7 @@ body{
   margin:0px;
   padding:0px;
   padding-bottom:30px;
-  color:black;
+  color:black !important;
   height:100%;
   background-color:lightgray;
 }
@@ -208,6 +208,7 @@ button{
   display:inline-block;
   width:50%;
   font-size:15px;
+  color:gray !important;
 }
 #citizen_cb{
   width:50%;
@@ -215,6 +216,7 @@ button{
   padding:10px;
   padding-bottom:20px;
   display:inline-block;
+  color:gray !important;
 }
 #secondHalf{
   border:solid #1F497D 2px;

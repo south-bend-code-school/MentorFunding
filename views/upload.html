@@ -9,7 +9,7 @@
     <!--Firebase-->
     <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
     <!--JS-->
-    <script src="../javascripts/apply.js"></script> 
+    <script src="../javascripts/upload.js"></script> 
     <!--CSS file-->
     <link href="../stylesheets/information.css" rel="stylesheet" type="text/css">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -60,6 +60,24 @@
       <!--Title-->
       <h1 style="color:#1F497D; margin:0px;"><strong>Upload Documents</strong></h1>
       <h3 style="color:#1F497D; margin:0px;">Almost done! We need the following documents with your loan info and to verify your identity, income, and residence.</h3>
+      <div id="main" style="padding-bottom:100px;"> 
+        <h2 style="font-size:25px;"><strong>Load Documents</strong></h2>
+        <p><i>We value your privacy. All information is completely confidential. View our </i><a href="#">Privacy Policy</a></p>
+        <div class="mainInfoText" style="width:100%;padding-top:10px;padding-left:0px;">Upload a scan, photo, or screen shot of your most recent billing statement(s) for all the loans you are refinancing</div>
+        <h2 style="font-size:23px;"><strong>LOAD BILLING STATEMENT(S)</strong></h2>
+        <button type="submit" id="docUpload" style="width:25%;float:left;font-size:20px!important;"><strong>UPLOAD ANOTHER</strong></button>
+      </div>
+      <div id="main2">
+        <!--second half-->
+        <h2 style="font-size:23px; margin:0px;"><strong>INCOME VERIFICATION</strong></h2>
+        <p><i>We value your privacy. All information is completely confidential. View our </i><a href="#">Privacy Policy</a></p>
+        <div class="mainInfoText" style="width:100%;padding-top:10px;padding-bottom:0px; padding-left:0px;">Upload a scan, photo, or screen shot of one of the following:
+          <ul><li>Most recent paystub OR</li><li>A document identifying the name of the vendor (i.e. The Work Number) which your employer used for income verification, and your identifying information for that vendor to enable us to look up for income.</li></ul>
+        </div>
+        <h2 style="font-size:23px;"><strong>INCOME DOCUMENT</strong></h2>
+        <button type="submit" id="docUpload" style="width:25%;float:left;font-size:20px!important;"><strong>UPLOAD</strong></button> 
+      </div>
+
   </div>
   <!--Profile progress bar-->
   <div class="col-md-4" style="padding-top:100px; padding-bottom:1000px; padding-left:60px; background-color:#f8f8f8">
