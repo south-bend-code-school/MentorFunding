@@ -160,7 +160,7 @@ button{
   height:40px;
   border: solid #1F497D 1px;
   box-shadow: 0px 0px 6px;
-  
+  background-color:white; 
 }
 #citizenText{
   display:inline-block;
@@ -172,6 +172,7 @@ button{
   display:inline-block;
   width:40px;
   height:40px;
+  background-color:white;
   border: solid #1F497D 1px;
   box-shadow: 0px 0px 6px;
   
@@ -197,9 +198,23 @@ button{
   font-weight:bold;
   text-align:center;
 }
-#cb{
+#gradoption_cb{
   padding:10px;
   padding-bottom:20px;
+}
+#consent_cb{
+  padding:10px;
+  padding-bottom:20px;
+  display:inline-block;
+  width:50%;
+  font-size:15px;
+}
+#citizen_cb{
+  width:50%;
+  font-size:20px;
+  padding:10px;
+  padding-bottom:20px;
+  display:inline-block;
 }
 #secondHalf{
   border:solid #1F497D 2px;

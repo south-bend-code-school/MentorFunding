@@ -13,10 +13,8 @@ window.onload = function(){
   //get name to display at top instead of sign in
   firebase.auth().onAuthStateChanged( function(user) {
     if (user) {
-      var name = user.email;
-      var display_name = name.split('@')[0];
       var html_name = document.getElementById('signIn');
-      html_name.innerHTML = display_name;
+      html_name.innerHTML = user.displayName;
       //show user name near login (get inner HTML of that div
       document.getElementById('signIn').addEventListener('click', logout, false);
     }

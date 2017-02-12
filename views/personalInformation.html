@@ -85,7 +85,7 @@
           </div>
           <div class="mainInfoText" style="padding-right:240px;">Zip Code</div><div class="form"><input class="form-control" style="border:none; font-size:20px;" id="zipCode" placeholder="XXXXX"></div>
           <div class="mainInfoText" style="padding-right:210px;">Date of Birth</div><div class="form"><input class="form-control" style="border:none; font-size:20px;" id="DOB" placeholder="MM / DD / YYYY"></div>
-          <div class="mainInfoText" style="padding-right:160px;">Citizenship Status</div><div id="citizen"></div><div id="citizenText">I am a U.S. citizen or permanent resident</div>
+          <div class="mainInfoText" style="padding-right:160px;">Citizenship Status</div><div class="check-box" id="citizen_cb"><input id="citizen_state"type="checkbox"><strong><i>I am a U.S. citizen or permanent resident</i></strong></div>
           <div class="mainInfoText" style="padding-right:160px;">Home Ownership</div><div class="form"><select class="form-control" style="border:none; font-size:20px;" id="homeOwner"><option>Home Owner</option><option>Renting</option><option>Other</option></select></div>
         </div>
       </div>
@@ -96,7 +96,8 @@
         <h2 style="font-size:25px;"><strong>CREATE ACCOUNT</strong></h2> 
         <div class="mainInfoText" style="padding-right:250px">Email</div><div class="form"><input type="email" class="form-control" style="border:none; font-size:20px" id="emailTxt" placeholder="Enter Email"></div>
         <div class="mainInfoText" style="padding-right:140px">Create Passoword</div><div class="form"><input type="password" class="form-control" style="border:none; font-size:20px" id="passwordTxt" placeholder="Enter Password"></div>
-        <div class="mainInfoText" style="padding-right:230px;">Consent</div><div id="consent"></div><div id="consentText">I have read, understood, and consented to the language and authorization outline in <a href="#">Mentor Funding's Privacy & Security Policy.</a></div>
+        <!--<div class="mainInfoText" style="padding-right:230px;">Consent</div><div id="consent"></div>-->
+        <div class="mainInfoText" style="padding-right:230px;">Consent</div><div class="check-box" id="consent_cb"><input id="consent_state" type="checkbox"><strong><i>I have read, understood, and consented to the language and authorization outline in <a href="#">Mentor Funding's Privacy & Security Policy.</a></i></strong></div>
         <h3 id="bottomText">Already Have Account? Sign In</h3><button type="submit" id="continueBtn">CONTINUE</button>
       </div>
     </form>     
