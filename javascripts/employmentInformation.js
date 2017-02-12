@@ -12,13 +12,8 @@ firebase.initializeApp(config);
 window.onload = function(){
   //get name to display at top instead of sign in
   var user = firebase.auth().currentUser;
-  var userId = user.uid;
-  firebase.database().ref('/Users/' + userId).once('value').then(function(snapshot) {
-    var username = Object(snapshot.val()).firstName;
-    user.updateProfile({displayName: username}).catch(function(error){console.log(error)}); 
-    var html_name = document.getElementById('signIn');
-    html_name.innerHTML = user.displayName;
-  });
+  var html_name = document.getElementById('signIn');
+  html_name.innerHTML = user.displayName;
   //wait for button press
   document.getElementById("continueBtn").addEventListener('click', proceed, false);
 }
