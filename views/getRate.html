@@ -65,16 +65,130 @@
         <h2 style="font-size:25px;"><strong>CURRENT LOAN INFORMATION</strong></h2>
         <p><i>We value your privacy. All information is completely confidential. View our </i><a href="#">Privacy Policy</a></p>
         <div class="form-group">
-          <div></div>
+          <h3 class="loanInfoText">Total Loan Balance:</h3><h3 class="loanInfoText">Avg. Interest Rate</h3><h3 class="loanInfoText">Avg. Remaining Time:</h3>
+          <div style="padding-right:100px; padding-left:30px;display:inline-block;"><input class="form-control loanInfoInput" id="totalLoans" placeholder="$ 30,000.00"></div>
+          <div style="padding-right:110px; display:inline-block; width:25%;"><input class="form-control loanInfoInput" id="interestRate" placeholder="7.00       %"></div>
+          <div style="padding-left:50px; display:inline-block; padding-bottom:60px; width:15%;"><input class="form-control loanInfoInput" id="timeRemaining" placeholder="10  Yrs"></div>
+          <div class="mainInfoText" style="padding-right:100px;">Total Monthly Payment</div><div class="form"><input class="form-control" style="border:none; padding-top:20px; font-size:20px;" id="monthlyPayment" placeholder="$ 3348.33"></div>
+          <div class="mainInfoText" style="padding-right:140px;">Total Lifetime Cost</div><div class="form"><input class="form-control" style="border:none; padding-top:20px; font-size:20px;" id="lifetimeCost" placeholder="$ 41,799.05"></div>
         </div>  
       </div>
+      <div style="padding-right:140px;">
+        <h1 style="color:#1F497D; margin:0px;"><strong>Loan Types</strong></h1>
+        <h4 style="color:#1F497D">The rates shown are the range of potential rates depending on your personal credit profile. Your actual rate depends on your loan amount, loan term, employment status, education history, past credit score, among other factors.</h4>
+        <h4 style="color:#1F497D; padding-top:10px;">Selected a preferred loan. You can choose a different option later.</h4>
+        <h4 style="color:#1F497D; padding-top:20px;"><strong>If you need assistance, please call us at XXX - XXX - XXXX or email</strong></h4>
+        <h4 style="color:#1F497D"><strong>CustomerService@MentorFunding.com</strong></h4>
+      </div>
+        <h1 style="color:#1F497D; margin:0px; padding-bottom:20px; padding-top:20px;"><strong>Fixed Rates</strong></h1>
+        <table class="table table-bordered" style="font-size:18px; text-align:center; border:solid #1F497D 2px; box-shadow: 0px 0px 6px;">
+          <thead style="background-color:#1F497D; color:white;"><tr>
+              <th></th>
+              <th>Term (Years)</th>
+              <th>Monthly Payment</th>
+              <th>Interest Rate</th>
+              <th>Lifetime Cost</th>
+              <th>Lifetime Savings</th>
+              <th>Monthly Savings</th>
+          </tr></thead>
+          <tbody style="background-color:white; text-align:center;">
+            <tr id="Fixed5yrRow">
+              <th scope="row" style="width:130px;">
+                  <input type="checkbox" id="5yrFixed" style="display:inline-block;">
+                <div style="color:#1F497D; font-weight:bold; display:inline-block; padding-left:10px; font-size:18px;" id="5yrFixedText">Select</div>
+              </th>
+              <td><strong>5</strong></td>
+              <td>$546.42</td>
+              <td>3.550%</td>
+              <td>$32,785.46</td>
+              <td>$9,013.59</td>
+              <td style="text-align:right;">$0.00</td>
+            </tr>
+            <tr id="Fixed10yrRow">
+              <th scope="row" style="width:130px;">
+                  <input type="checkbox" id="10yrFixed" style="display:inline-block;">
+                <div style="color:#1F497D; font-weight:bold; display:inline-block; padding-left:10px; font-size:18px;" id="10yrFixedText">Select</div>
+              </th>
+              <td><strong>10</strong></td>
+              <td>$312.58</td>
+              <td>4.615%</td>
+              <td>$37,509.72</td>
+              <td>$4,298.33</td>
+              <td style="text-align:right;">$35.75</td>
+            </tr>
+            <tr id="Fixed15yrRow">
+              <th scope="row" style="width:130px;">
+                  <input type="checkbox" id="15yrFixed" style="display:inline-block;">
+                <div style="color:#1F497D; font-weight:bold; display:inline-block; padding-left:10px; font-size:18px;" id="15yrFixedText">Select</div>
+              </th>
+              <td><strong>15</strong></td>
+              <td>$239.20</td>
+              <td>5.125%</td>
+              <td>$28,942.73</td>
+              <td>$12,856.32</td>
+              <td style="text-align:right;">$109.13</td>
+            </tr>
+          </tbody>
+        </table>
+        <h1 style="color:#1F497D; margin:0px;"><strong>Variable Rates</strong></h1>
+        <h4 style="color:#1F497D; padding-top:20px; padding-bottom:20px;">Initial payments, rates, and savings shown.</h4>
+        <table class="table table-bordered" style="font-size:18px; text-align:center; border: solid #1F497D 2px; box-shadow:0px 0px 6px;">
+          <thead style="background-color:#1F497D; color:white;"><tr>
+              <th></th>
+              <th>Term (Years)</th>
+              <th>Monthly Payment</th>
+              <th>Interest Rate</th>
+              <th>Lifetime Cost</th>
+              <th>Lifetime Savings</th>
+              <th>Monthly Savings</th>
+          </tr></thead>
+          <tbody style="background-color:white; text-align:center;">
+            <tr id="Variable5yrRow">
+              <th scope="row" style="width:130px;">
+                  <input type="checkbox" id="5yrVariable" style="display:inline-block;">
+                <div style="color:#1F497D; font-weight:bold; display:inline-block; padding-left:10px; font-size:18px;" id="5yrVariableText">Select</div>
+              </th>
+              <td><strong>5</strong></td>
+              <td>$546.42</td>
+              <td>3.550%</td>
+              <td>$32,785.46</td>
+              <td>$9,013.59</td>
+              <td style="text-align:right;">$0.00</td>
+            </tr>
+            <tr id="Variable10yrRow">
+              <th scope="row" style="width:130px;">
+                  <input type="checkbox" id="10yrVariable" style="display:inline-block;">
+                <div style="color:#1F497D; font-weight:bold; display:inline-block; padding-left:10px; font-size:18px;" id="10yrVariableText">Select</div>
+              </th>
+              <td><strong>10</strong></td>
+              <td>$312.58</td>
+              <td>4.615%</td>
+              <td>$37,509.72</td>
+              <td>$4,298.33</td>
+              <td style="text-align:right;">$35.75</td>
+            </tr>
+            <tr id="Variable15yrRow">
+              <th scope="row" style="width:130px;">
+                  <input type="checkbox" id="15yrVariable" style="display:inline-block;">
+                <div style="color:#1F497D; font-weight:bold; display:inline-block; padding-left:10px; font-size:18px;" id="15yrVariableText">Select</div>
+              </th>
+              <td><strong>15</strong></td>
+              <td>$239.20</td>
+              <td>5.125%</td>
+              <td>$28,942.73</td>
+              <td>$12,856.32</td>
+              <td style="text-align:right;">$109.13</td>
+            </tr>
+          </tbody>
+        </table>
+      
       <div id="main2" style="padding-bottom:100px;">
         <button type="button" id="continueBtn">CONTINUE</button>
       </div>
     </form>     
   </div>
   <!--Profile progress bar-->
-  <div class="col-md-4" style="padding-top:100px; padding-left:60px; background-color:#f8f8f8">
+  <div class="col-md-4" style="padding-top:100px; padding-bottom:1000px; padding-left:60px; background-color:#f8f8f8">
     <div>
       <div class="profileInfo"><div class="numCirclesText">PROFILE</div></div>
       <div class="profileInfo" style="padding-top:0px !important; padding-left:0px !important;padding-right:20px;"><img src="../images/check_mark.png"><div class="numCirclesText" style="padding-left:0px !important;">Enter Personal Info</div></div>
