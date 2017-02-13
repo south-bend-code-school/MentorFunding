@@ -8,7 +8,6 @@ var config = {
 };
 
 firebase.initializeApp(config);
-//global variables
 
 window.onload = function(){
   //get name to display at top instead of sign in
@@ -20,20 +19,5 @@ window.onload = function(){
     var html_name = document.getElementById('signIn');
     html_name.innerHTML = user.displayName;
   });
-  document.getElementById("continueBtn").addEventListener("click", checkConsent,false);
-
 }
 
-function checkConsent(){
-  var consent = document.getElementById('upload_consent_cb').value;
-  if (consent == 'off'){
-    alert('Need to consent to continue\nWindow will reload');
-    var delay = 3000;
-    setTimeout(function(){
-      window.location = "./upload.html";
-    },delay);
-  } else {
-    window.location = "./summary.html"
-  } 
-  
-}

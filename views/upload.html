@@ -60,24 +60,53 @@
       <!--Title-->
       <h1 style="color:#1F497D; margin:0px;"><strong>Upload Documents</strong></h1>
       <h3 style="color:#1F497D; margin:0px;">Almost done! We need the following documents with your loan info and to verify your identity, income, and residence.</h3>
-      <div id="main" style="padding-bottom:100px;"> 
+      <div class="upload_main">
         <h2 style="font-size:25px;"><strong>Load Documents</strong></h2>
         <p><i>We value your privacy. All information is completely confidential. View our </i><a href="#">Privacy Policy</a></p>
         <div class="mainInfoText" style="width:100%;padding-top:10px;padding-left:0px;">Upload a scan, photo, or screen shot of your most recent billing statement(s) for all the loans you are refinancing</div>
         <h2 style="font-size:23px;"><strong>LOAD BILLING STATEMENT(S)</strong></h2>
         <button type="submit" id="docUpload" style="width:25%;float:left;font-size:20px!important;"><strong>UPLOAD ANOTHER</strong></button>
       </div>
-      <div id="main2">
-        <!--second half-->
+      <div class="upload_main">
+        <!--second part-->
         <h2 style="font-size:23px; margin:0px;"><strong>INCOME VERIFICATION</strong></h2>
         <p><i>We value your privacy. All information is completely confidential. View our </i><a href="#">Privacy Policy</a></p>
         <div class="mainInfoText" style="width:100%;padding-top:10px;padding-bottom:0px; padding-left:0px;">Upload a scan, photo, or screen shot of one of the following:
           <ul><li>Most recent paystub OR</li><li>A document identifying the name of the vendor (i.e. The Work Number) which your employer used for income verification, and your identifying information for that vendor to enable us to look up for income.</li></ul>
         </div>
         <h2 style="font-size:23px;"><strong>INCOME DOCUMENT</strong></h2>
-        <button type="submit" id="docUpload" style="width:25%;float:left;font-size:20px!important;"><strong>UPLOAD</strong></button> 
+        <button type="submit" id="docUpload2" style="width:25%;float:left;font-size:20px!important;"><strong>UPLOAD</strong></button> 
       </div>
-
+      <!--Third part-->
+      <div class="upload_main">
+        <h2 style="font-size:25px;"><strong>IDENTIFY VERIFICATION</strong></h2>
+        <p><i>We value your privacy. All information is completely confidential. View our </i><a href="#">Privacy Policy</a></p>
+        <div class="mainInfoText" style="width:100%;padding-top:10px;padding-left:0px;">Upload a scan, photo, or screen shot of one of the following if you are refinancing at least one federal loan: Driver's License, U.S. Passport, or Military I.D.</div>
+        <div class="mainInfoText" style="width:100%;padding-top:10px;padding-left:0px;">Upload a scan, photo, or screen shot of one of a U.S. Passport, U.S. Birth Certificate, Certificate of Naturalization, or Permanent Resident/Green Card if you are only refinancing the private loans.</div>
+        <h2 style="font-size:23px;"><strong>INDENTIFICATION DOCUMENT</strong></h2>
+        <button type="submit" id="docUpload3" style="width:25%;float:left;font-size:20px!important;"><strong>UPLOAD ANOTHER</strong></button>
+      </div>
+      <!--Third part-->
+      <div class="upload_main">
+        <h2 style="font-size:25px;"><strong>ADDRESS VERIFICATION</strong></h2>
+        <p><i>We value your privacy. All information is completely confidential. View our </i><a href="#">Privacy Policy</a></p>
+        <div class="mainInfoText" style="width:100%;padding-top:10px;padding-left:0px;">Upload a scan or photo of one of the following: Utility Bill, Bank Statement, Loan Bill, or Comparable Bill.</div>
+        <h2 style="font-size:23px;"><strong>ADDRESS DOCUMENT</strong></h2>
+        <button type="submit" id="docUpload3" style="width:25%;float:left;font-size:20px!important;"><strong>UPLOAD ANOTHER</strong></button>
+      </div>
+      <!-- break-->
+      <div style="border:none; height:100px;"></div>
+      <!--Fourth part-->
+      <div class="upload_main">
+        <h2 style="font-size:25px;"><strong>APPLY NOW</strong></h2>
+        <p><i>We value your privacy. All information is completely confidential. View our </i><a href="#">Privacy Policy</a></p>
+        <div class="mainInfoText" style="width:100%;padding-top:10px;padding-left:0px;">If you apply for a loan, we will request your full credit report from one or more consumer reporting agencies.</div>
+        <div class="mainInfoText" style="padding-right:130px;">Social Security Number</div><div class="form"><input class="form-control" style="border:none; padding-top:20px; font-size:20px;" id="SSN" placeholder="XXX-XXX-XXXX"></div>
+        <div class="check-box" id="upload_consent_cb"><input type="checkbox"><strong><i>I have read and consent to this disclosure.</i></strong></div>
+        <button type="button" id="continueBtn">APPLY NOW</button>
+        
+      </div>
+      
   </div>
   <!--Profile progress bar-->
   <div class="col-md-4" style="padding-top:100px; padding-bottom:1000px; padding-left:60px; background-color:#f8f8f8">
