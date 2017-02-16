@@ -57,26 +57,20 @@
 
 <div class="row">
   <div class="col-md-8" style="padding-top:100px; background-color:#f8f8f8; display:block;">
-      <!--Title-->
-      <h1 style="color:#1F497D; margin:0px;"><strong>Enter Loan Information</strong></h1>
-      <h3 style="color:#1F497D; margin:0px; padding-bottom:25px;">Enter your loan information to determine your eligibility for a loan</h3>
+    <div id="processing">
+      <h2><strong>Processing Application</strong></h2>
+      <p style="font-size:20px;">Thank you for providing your information. We at Mentor Funding are currently processing your application. We will contact you shortly with the next steps. Please do not hesitate to contact us at XXX-XXX-XXXX or email CustomerService@MentoringFunding.com with any questions.</p>
+    </div>
+    <h2 style="color:#1F497D; padding-bottom:25px;padding-top:50px;"><strong>Summary</strong></h2>
     <form>
       <!--Personal information write up-->
-      <div id="main" style="padding-bottom:10px;"> 
-        <h2 style="font-size:25px;"><strong>LOAN INFORMATION</strong></h2>
+      <div id="main" style="padding-bottom:50px;"> 
+        <h2 style="font-size:25px;"><strong>LOAN APPLICATION SUMMARY</strong></h2>
         <p><i>We value your privacy. All information is completely confidential. View our </i><a href="#">Privacy Policy</a></p>
         <div class="form-group">
-          <div class="mainInfoText" style="width:100%;padding-top:50px;">Estimate the total amount of student loans you wish to refiance</div>
-          <div class="mainInfoText" style="padding-right:160px;">Total Loan Amount</div><div class="form"><input class="form-control" style="border:none; padding-top:20px; font-size:20px;" id="totalLoans" placeholder="$          Approximate Amount"></div>
-        </div>
-      </div>
-      <div id="main2">
-        <div class="form-group">
-          <!--second half-->
-          <h2 style="font-size:25px; margin:0px;"><strong>CONSENT TO SOFT INQUIRY</strong></h2>
-          <p style="width:65%;"><i>By entering your SSN, you are consenting to an eligibility inquiry, or a soft credit inquiry, to review your personal credit information. This inquire will NOT affect your credit score. However, if you choose a product and apply for a loan we will request your full credit report from one or more consumer reporting agencies.</i></p>
-          <div class="mainInfoText" style="padding-right:130px;padding-top:50px;">Social Security Number</div><div class="form"><input class="form-control" style="border:none; padding-top:20px; font-size:20px;" id="SSN" placeholder="XXX-XXX-XXXX"></div>
-          <button type="button" id="continueBtn">CONTINUE</button>
+          <div class="mainInfoText" style="padding-right:160px;">Product Chosen</div><div class="form"><input class="form-control" style="border:none; padding-top:20px; font-size:20px;" id="totalLoans" placeholder="Student Loan Refiance Requested Amount"></div>
+          <div class="mainInfoText" style="padding-right:190px;">5-Year Fixed</div><div class="form"><input class="form-control" style="border:none; padding-top:20px; font-size:20px;" id="totalLoans" placeholder="$          30,0000.00"></div>
+          <button id="continueBtn">MY LOANS</button> 
         </div>
       </div>
     </form>     
