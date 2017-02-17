@@ -94,7 +94,47 @@ button{
   margin-right:20px !important;
   margin-bottom:10px !important;
 }
-
-
+#mainRow{
+  padding-top:100px!important;
+  padding-left:40px !important;
+  padding-right:40px !important;
+  padding-bottom:100px !important;
+  background-color:#1F497D !important;
+}
+#messages{
+  display:inline-block;
+}
+.messageBoxes{
+  background-color:lightgray;
+  border-radius:2%;
+  margin-top:4px;
+}
+#greeting{
+  display:inline-block;
+  padding-left:40px !important;
+  background-color:white;
+  border: solid yellow 4px;
+  border-radius:1%;
+  color:#1F497D;
+}
+#network{
+  display:inline-block;
+  background-color:white;
+  color:#1F497D;
+  font-weight:bold;
+  padding:0px;
+}
+.tinyNetworks{
+  border: solid yellow 1px;
+  padding:20px;
+  font-size:20px;
+}
+#tinyNetworksActive{
+  border: solid yellow 1px;
+  padding:20px;
+  font-size:20px;
+  background-color:#1F497D;
+  color: white;
+}
 
 

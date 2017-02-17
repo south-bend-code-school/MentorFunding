@@ -60,67 +60,30 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<div class="row">
-  <div class="col-md-8" style="padding-top:200px; padding-left:40px; padding-bottom:105px; background-color:#1F497D;">
-    <!--Mains student loans box-->
-    <div id="studentLoan">
-      <div style="background-color:lightgray; border-bottom:solid SteelBlue 4px; padding:15px; box-shadow:0px 0px 4px;">
-        <h2>My Student Loans</h2> 
-      </div>
-      <div id="inner_left">
-        <h4><strong>LOAN BALANCE</strong></h4>
-        <h1 style="color:#1F497D; padding-bottom:50px;"><strong>$29,542.33</strong></h1>
-        <div style="display:block;"><h4 style="display:inline-block; color:gray; padding-right:50px !important;"><strong>LOAN AMOUNT</strong></h4><h4 style="display:inline-block; color:gray;"><strong>CURRENT APR</strong></h4></div>
-        <div style="display:block;"><h3 style="display:inline-block; padding-right:50px !important;"><strong>$30,000.00</strong></h3><h3 style="display:inline-block;"><strong>3.550% Fixed</strong></h3></div>
-      </div><div id="inner_right">
-        <h4><strong>NEXT PAYMENT</strong></h4>
-        <h1 style="color:#1F497D"><strong>$546.42</strong></h1>
-        <h3><strong>March 05, 2017</strong></h3>
-      </div>
-    </div>
-    <div style="border:none; background-color:#1F497D; height:50px;"></div>
-    <!--Transaction history-->
-    <div id="history">
-      <div style="background-color:lightgray; padding:15px;">
-        <h2>Transaction History</h2>
-      </div>
-      <table class="table table-bordered" style="font-size:25px;padding:0px!important;margin:0px!important;">
-        <thead style="background-color:#1F497D; color:white;"><tr>
-            <th>DATE</th>
-            <th>TRANSACTION TYPE</th>
-            <th>AMOUNT</th>
-            <th>LOAN BALANCE</th>
-        </tr></thead>
-        <tbody style="background-color:white;">
-          <tr>
-            <td>01/16/2017</td>
-            <td>Sallie Mae Payoff</td>
-            <td>-$30,000.00</td>
-            <td><strong>$30,000.00</strong></td>
-          </tr>
-          <tr>
-            <td>02/05/2017</td>
-            <td>Manual Payoff</td>
-            <td>$546.42</td>
-            <td><strong>$29,542.33</strong></td>
-          </tr>
-        </tbody>
-      </table> 
-    </div>
+<div class="row" id="mainRow">
+  <div class="col-md-3" id="messages">
+    <div class="messageBoxes"style="padding-left:20px;padding-bottom:30px;padding-right:10px;padding-top:5px;"><h3 style="display:inline-block;padding-top:20px !important;">All Messages  v</h3><img src="../images/write.png" style="display:inline-block;float:right;"></div>
+    <div class="messageBoxes"style="padding-left:40px;padding-top:10px;padding-bottom:10px;margin:0px;background-color:darkgray;"><img src="../images/search.png" style="display:inline-block;padding-right:20px;"><h3 style="display:inline-block;">Search</h3></div>
+    <div class="messageBoxes"><img src="../images/default_mini.png" style="display:inline-block;padding-right:20px;width:25%;float:left;padding-top:5px;"><div style="display:inline-block;width:75%;padding-top:10px;"><h4><strong>Jane Doe</strong></h4><p>Great to hear from you, hope you had a nice...</p></div></div>
+    <div class="messageBoxes"><img src="../images/default_mini.png" style="display:inline-block;padding-right:20px;width:25%;float:left;padding-top:5px;"><div style="display:inline-block;width:75%;padding-top:10px;"><h4><strong>Richard Roe</strong></h4><p>Agreed! Let us try and meet the begining of next week...</p></div></div>
+    <div class="messageBoxes"style="padding:20px;"><h4 style="display:inline-block;"></div>
+    <div class="messageBoxes"style="padding:20px;"><h4 style="display:inline-block;"></div>
+    <div class="messageBoxes"style="padding:20px;"><h4 style="display:inline-block;"></div>
   </div>
-  <!--Profile progress bar-->
-  <div class="col-md-4" style="padding-top:200px; padding-left:30px; padding-bottom:155px; background-color:#1F497D;">
-    <div style="border:solid yellow 2px;">
-      <div id="label_top"><strong>MY STUDENT LOAN</strong></div>
-      <div id="label_bottom"><img src="../images/default_image.png" style="margin-right:20px;"><strong>Loan Overview</strong></div>
-    </div>
-    <div style="border:none; background-color:#1F497D; height:75px;"></div>
-    <div id="payment_options">
-      <div id="options_header"><strong>PAYMENT OPTIONS</strong></div>
-      <div class="options" style="border-bottom:solid yellow 2px;"><img src="../images/small_money.png" style="display:inline-block; margin-right:20px;"><strong>Make A Payment</strong></div>
-      <div class="options" style="border-bottom:solid yellow 2px;"><img src="../images/small_house.png" style="display:inline-block; margin-right:20px;"><strong>Update A Payment</strong></div>
-      <div class="options"><img src="../images/small_schedule.png" style="display:inline-block; margin-right:20px;"><strong>View Scheduled Payments</strong></div>
-    </div>
+  <div class="col-md-5" id="greeting" style="margin-right:50px; margin-left:50px;">
+    <h1>Hi, John!</h1>
+    <h3 style="padding-bottom:50px!important;">Get started by calling or messaging a mentor below.</h3>
+    <div style="padding-bottom:40px;">
+      <img style="display:inline-block;" src="../images/video.png">
+      <img style="display:inline-block;" src="../images/message.png">
+      <img style="display:inline-block;" src="../images/call.png">
+  </div>
+  </div>
+  <div class="col-md-3" id="network">
+    <div class="tinyNetworks"><img src="../images/mentor_network_logo.png" style="padding-right:20px;">Mentor Network</div>
+    <div class="tinyNetworks"><img src="../images/contacts_logo.png" style="padding-right:20px;">Contacts</div>
+    <div id="tinyNetworksActive"><img src="../images/convo_logo.png" style="padding-right:20px;">Conversations</div>
+    <div class="tinyNetworks"><img src="../images/call_logo.png" style="padding-right:20px;">Phone Calls</div>
   </div>
 </div>
 
