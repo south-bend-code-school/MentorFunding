@@ -1,0 +1,163 @@
+body{
+  margin:0px;
+  padding:0px;
+  color:black;
+  height:100%;
+  background-color:#f8f8f8;
+}
+.container{
+  width:100% !important;
+  margin:0px !important;
+  padding:0px !important;
+  float:left;
+}
+.row{
+  width:100% !important;
+  margin: 0px !important;
+  padding:0px !important;
+}
+#header{
+  background-color:#f8f8f8;
+  margin:0px;
+  padding:0px;
+  width:100%;
+  height:60px;
+}
+.navbar-nav{
+  width:100%;
+}
+.navbar-form.navbar-right{
+  float:right;
+  height:100%;
+  width:100%;
+  margin:5px;
+  padding:0px;
+}
+.navbar-nav li:hover{
+  background-color:darkgray;
+}
+button{
+  float:right;
+  width:100%;
+  height:60px;
+  border-radius:0px;
+  background-color:#1F497D;
+  color:white !important;
+  font-size:35px !important;
+}
+
+
+
+/* ^^^^ BASICS NEEDED TO GET DIVS TO STRETCH TO WHOLE PAGE, STACK UP EVENLY, NAVBAR, MISC...*/
+#mainImage{
+  background-image: url('../images/index_background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:800px;
+  margin:0px;
+  padding:0px;
+  margin-top:50px;
+}
+#mainBoxRow{
+  padding-top:500px !important;
+  padding-left:50px !important;
+  padding-right:50px !important;
+  height:100% !important;
+
+}
+.mainBoxes{ 
+  padding:30px !important;
+  margin:20px;
+  border-radius:5%;
+  text-align:center !important;
+  background-color:white;
+  width:30% !important;
+  height:450px !important;
+  box-shadow: 0	0px	12px;
+}
+.mainBoxImages{
+  width: 100px;
+  height: 100px;
+  text-align:center;
+}
+.mainBoxButton{
+  width:100%;
+  height:75px;
+  border-radius:0px;
+  background-color:#1F497D;
+  color:white !important;
+  font-size:30px !important;
+  font-weight:bold;
+}
+#whiteLine{
+  width:50%;
+  height:5px;
+  background-color:white;
+  margin-left:25%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0	1px 6px black;
+}
+#whiteLine2{
+  width:95%;
+  height:4px;
+  background-color:white;
+  margin-left:2.5%;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  box-shadow: 0	1px 6px black;
+}
+#blue{
+  background-color:#1F497D;
+  height:600px;
+  text-align:center;
+  color:white;
+}
+#blue2{
+  background-color:#1F497D;
+  height:400px;
+  text-align:left;
+  color:white;
+}
+#WhoWeAre{
+  margin-top:10%;
+  margin-left:15%;
+  margin-right:15%;
+  text-align:center;
+}
+#nextImage{
+  background-image: url('../images/index_background2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:800px;
+  margin:0px;
+  padding:0px;
+  text-align:center;
+  color:white;
+}
+.big_four_segment{
+  float:left;
+  height:200px;
+}
+.small_image{
+  height:150px;
+  width:150px;
+  float:left;
+  margin-right:50px;
+  margin-top:30px;
+}
+.para_text{
+  text-align:left;
+  font-size:25px;
+}
+.connect_image{
+  height:100px;
+  width:100px;
+  margin-left:50px;
+  margin-right:50px;
+}
+.bottom_text{
+  margin-bottom:20px;
+  font-size:25px;
+}
+
