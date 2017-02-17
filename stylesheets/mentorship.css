@@ -1,0 +1,100 @@
+body{
+  margin:0px;
+  padding:0px;
+  color:black !important;
+  height:100% !important;
+  background-color:lightgray;
+}
+h2{
+  padding:0px !important;
+  margin:0px !important;
+}
+h3{
+  padding:0px !important;
+  margin:0px !important;
+}
+h4{
+  padding:0px !important;
+  margin:0px !important;
+}
+.container{
+  width:100% !important;
+  margin:0px !important;
+  padding:0px !important;
+  float:left;
+}
+.row{
+  width:100% !important;
+  margin: 0px !important;
+  padding:0px !important;
+  height: 100% !important;
+}
+#header{
+  background-color:lightgray;
+  margin:0px;
+  padding:0px;
+  width:100%;
+  height:60px;
+}
+.navbar-nav{
+  width:100%;
+}
+.navbar-form.navbar-right{
+  float:right;
+  height:100%;
+  width:100%;
+  margin:5px;
+  padding:0px;
+}
+.navbar-nav li:hover{
+  background-color:darkgray;
+}
+button{
+  float:right;
+  width:100%;
+  height:60px;
+  border-radius:0px;
+  background-color:#1F497D;
+  color:white !important;
+  font-size:35px !important;
+}
+#helpText{
+  font-size:25px;
+  color:gray;
+  font-weight:bold;
+  padding-left:60px;
+  float:right;
+}
+/* ^^^^ BASICS NEEDED TO GET DIVS TO STRETCH TO WHOLE PAGE, STACK UP EVENLY, NAVBAR, MISC...*/
+
+.headers{
+  border-left: 1px solid #1F497D;
+  border-right: 1px solid #1F497D;
+  border-bottom: 1px solid #1F497D;
+  box-shadow: 0px 0px 2px;
+}
+.headerText{
+  color:gray;
+  padding-top:10px !important;
+  margin-left:20px !important;
+  margin-right:20px !important;
+  margin-bottom:10px !important;
+}
+#headersActive{
+  border-left: 1px solid #1F497D;
+  border-right: 1px solid #1F497D;
+  border-bottom: 1px solid #1F497D;
+  box-shadow: 0px 0px 6px;
+  background-color: #1F497D;
+}
+#headerTextActive{
+  color:white;
+  padding-top:10px !important;
+  margin-left:20px !important;
+  margin-right:20px !important;
+  margin-bottom:10px !important;
+}
+
+
+
+
