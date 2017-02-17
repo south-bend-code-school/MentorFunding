@@ -9,9 +9,9 @@
     <!--Firebase-->
     <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
     <!--JS-->
-    <script src="javascripts/about.js"></script>
+    <script src="../javascripts/about.js"></script>
     <!--CSS file-->
-    <link href="stylesheets/about.css" rel="stylesheet" type="text/css">
+    <link href="../stylesheets/about.css" rel="stylesheet" type="text/css">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
@@ -42,12 +42,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>-->
-      <a href="../index.html"><img src="./images/MentorFundingLogo.png"></a>
+      <a href="../index.html"><img src="../images/MentorFundingLogo.png"></a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="col-md-7">
       <ul class="nav navbar-nav">
-        <li><a href="views/personalInformation.html"><h4 style="margin-right:30px; margin-left:50px; color:gray;"><strong>Refinance Student Loans</strong></h4></a></li>
+        <li><a href="./views/personalInformation.html"><h4 style="margin-right:30px; margin-left:50px; color:gray;"><strong>Refinance Student Loans</strong></h4></a></li>
         <li><a href="./views/mentorship.html"><h4 style="margin-right:30px; color:gray;"><strong>Mentorship</strong></h4></a></li>
         <li><a href="#"><h4 style="margin-right:30px; color:gray;"><strong>Eligibility</strong></h4></a></li>
         <li><a href="#"><h4 style="margin-right:30px; color:gray;"><strong>Help</strong></h4></a></li>
@@ -62,127 +62,51 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<!--Main image-->
+<!--Title-->
 <div class="row">
-  <div id="mainImage" class="col-md-12">
-    <div class="row" id="mainBoxRow">
-      <div class="col-md-4 mainBoxes">
-        <img src="./images/cap.png" class="mainBoxImages">
-        <h2 style="color:gray; font-size:35px;"><strong>Studen Loan Refinancing</strong></h2>
-        <button id = "startApp" class="mainBoxButton">Start Application</button>
-        <div style="margin-top:150px"><a style="color:gray" href="#"><h4 style="font-size:25px;"><u>Learn More</u></h4></a></div>
-      </div>
-      <div class="col-md-4 mainBoxes">
-        <img src="./images/friends.png" class="mainBoxImages">
-        <h2 style="color:gray; font-size:35px;"><strong>Career-Progression Mentorship</strong></h2>
-        <button id="findMentor" class="mainBoxButton">Find A Mentor</button>
-        <div style="margin-top:150px"><a style="color:gray" href="#"><h4 style="font-size:25px;"><u>Learn More</u></h4></a></div>
-      </div>
-      <div class="col-md-4 mainBoxes">
-        <img src="./images/calculator.png" class="mainBoxImages">
-        <h2 style="color:gray; font-size:35px;"><strong>Student Loan Calculator</strong></h2>
-        <button id="checkRate" class="mainBoxButton">Check Rate</button>
-        <div style="margin-top:150px"><a style="color:gray" href="#"><h4 style="font-size:25px;"><u>Learn More</u></h4></a></div>
-      </div>
+  <div class="col-md-12" id="title">About Us</div>
+</div>
+<div class="row" style="background-color:#f8f8f8; height:50px;"></div>
+<!--middle portion-->
+<div class="row">
+  <!--Main Text-->
+  <div class="col-md-7" id="mainText">
+    <h1>Converting student debt from a burden to a benefit</h1>
+    <h3>Student debt has a profound impact on the daily lives of many young Americans, preventing individuals from buying a home, starting a family, and saving for retirement and other investments. Student loan debt is stagnating the growth of young adults, however, refinancing student debt can change this, avoiding the unreasonable delay of significant life goals and purposes.</h3>
+    <h3 style="padding-bottom:50px;">Mentor Fundings platform provides secure student loan refinancing; coupling low interest rates and flexible repayment terms with unmatched career progression mentorship.</h3>
+    <div style="border-left:solid #1F497D 1px; padding-left:50px;">
+      <h3>Mentor Fundings mission is to become the best-in-class student loan refinancing and career mentorship service in the development of data-driven solutions to alleviate the burdens of debt, improve professional success, and facilitate financial independence.</h3>
     </div>
+    <h1 style="padding-top:50px;">Our goals are to:</h1>
+    <ul>
+      <li><h3>Alleviate the burdens of student debt, which are stagnating the growth of many young Americans, and postponing major life accomplishments;</h3></li>
+      <li><h3>Provide career-progression and development mentorship to young professionals from trusted, connected sources vested in their success;</h3></li>
+      <li><h3>Enable individuals to earn greater returns, increase savings, and eliminate periodic expenditures;</h3></li>
+      <li><h3>Help you declare your financial freedom!</h3></li>
+    </ul>
+  </div>
+  <!--Stats-->
+  <div class="col-md-4" id="stats">
+    <h1 class="noPM"><strong>WHY REFINANCE?</strong></h1>
+    <h1 class="noPM" style="padding-bottom:20px;"><strong>WHY NOW?</strong></h1>
+    <img src="../images/first_stat.png">
+    <h4 class="statsText">Student loan refinancing could help you take advantage of your decreased credit risk by locking in  a lower interest rate.</h4>
+    <img src="../images/second_stat.png">
+    <h4 class="statsText">Refinancing your student loans can lower your monthly payments; ideal for grads who do not qualify for income-based repayment but do not make enough money yet to comfortably make their student loan payments.</h4>
+    <img src="../images/third_stat.png">
+    <h4 class="statsText">Student loan refinancing allows you to consolidate your multiple student loans into one monthly payment, making repayment easier to organize, track, and repay.</h4>
+    <img src="../images/fourth_stat.png">
+    <h4 class="statsText">Refinancing provides you with the opportunity to switch to a new financial servicer provider that cares truly cares about you and has your best interest at heart. A service like Mentor Funding!</h4>
   </div>
 </div>
-
-<!--Maiin potions-->
-<div class="row" style="height:400px; background-color:#f8f8f8;">
-</div>
-
-<!--Who we are-->
-<div class="row">
-  <div id="blue" class="col-md-12">
-    <div id="WhoWeAre">
-      <h1 style="font-size:40px"><strong>WHO WE ARE</strong></h1>
-      <div id="whiteLine"></div>
-      <h3 style="font-size:30px">Mentor Funding refinances the student loans of recent college graduates, and provides them career-progression mentorship by connecting them to a network of alumni <strong><u>literally</u></strong> invested in their futures.</h3>
-      <div style="margin-top:60px"><a style="color:white" href="#"><h4><strong><u>Learn More</u></strong></h4></a></div>
-    </div>
-  </div>
-</div>
-
-<!--Gap-->
-<div class="row"><div class="col-md-12" style="height:150px; background-color:#f8f8f8;"></div></div>
-
-<!--Helping you declare your financial freedom-->
-<div class="row">
-  <div id="nextImage" class="col-md-12">
-    <div class="row col-md-12 big_four_segment">
-      <h2 style="margin-top:60px; margin-bottom:60px; font-size:40px;"><strong>Helping you declare your financial freedom.</strong></h2>
-    </div>
-    <div class="row big_four_segment">
-      <div style="padding-right:150px;" class="col-md-6">
-        <img src="./images/data_driven.png" class="small_image">
-        <h2 style="text-align:left"><strong>DATA DRIVEN</strong></h2>
-        <p class="para_text">Our risk assessment algorithm allows our borrower to refinance at personalized interest rates, easing their repayment process.</p>
-      </div>
-      <div style="padding-right:150px;"class="col-md-6">
-        <img src="./images/asset_accumulation.png" class="small_image">
-        <h2 style="text-align:left"><strong>ASSET ACCUMULATION</strong></h2>
-        <p class="para_text">Our risk assessment algorithm allows our borrower to refinance at personalized interest rates, easing their repayment process.</p>
-      </div> 
-    </div>
-    <div style="margin-top:50px !important;" class="row big_four_segment">
-      <div style="padding-right:150px;" class="col-md-6">
-        <img src="./images/career_mentorship.png" class="small_image">
-        <h2 style="text-align:left"><strong>CAREER MENTORSHIP</strong></h2>
-        <p class="para_text">Our risk assessment algorithm allows our borrower to refinance at personalized interest rates, easing their repayment process.</p>
-      </div>
-      <div style="padding-right:150px;" class="col-md-6">
-        <img src="./images/expense_reduction.png" class="small_image">
-        <h2 style="text-align:left"><strong>EXPENSE REDUCTION</strong></h2>
-        <p class="para_text">Our risk assessment algorithm allows our borrower to refinance at personalized interest rates, easing their repayment process.</p>
-      </div> 
-    </div>
-  </div>
-</div>
-
-<!--Gap-->
-<div class="row"><div class="col-md-12" style="height:150px; background-color:#f8f8f8;"></div></div>
-
+<div style="height:70px;"></div>
 <!--Footer-->
-<div id="blue2" class="row">
-  <div style="margin-top:30px !important; margin-left:20px !important;" class="row">
-    <div class="col-md-2">
-      <h3 style="margin-bottom:20px; font-size:30px;"><strong>Company</strong></h3>
-      <h4 class="bottom_text">About Us</h4>
-      <h4 class="bottom_text">Press</h4>
-      <h4 class="bottom_text">Careers</h4>
-      <h4 class="bottom_text">Partners</h4>
+<div class="row" style="background-color:#1F497D; color:white; padding-top:20px !important;">
+  <div style="margin-left:20px !important; float:left;"class="col-md-12">
+    <h3 style="text-align:left; display:inline-block;"><img src="../images/Copyright.png" width="25px" height="25px" style="margin-bottom:5px;">2016 Mentor Funding, LLC | All Rights Reserved</h3>
+    <div style="margin-right:20px !important;display:inline-block; float:right;">
+      <img src="../images/Facebook.png" class="connect_image"><img src="../images/LinkedIn.png" class="connect_image"><img src="../images/Twitter.png" class="connect_image"> 
     </div>
-    <div class="col-md-2">
-      <h3 style="margin-bottom:20px; font-size:30px;"><strong>Legal</strong></h3>
-      <h4 class="bottom_text">Privacy & Security</h4>
-      <h4 class="bottom_text">Terms of Use</h4>
-      <h4 class="bottom_text">Lending License</h4>
-      <h4 class="bottom_text">Eligibility Criteria</h4>
-    </div>
-    <div class="col-md-2">
-      <h3 style="margin-bottom:20px; font-size:30px;"><strong>Questions</strong></h3>
-      <h4 class="bottom_text">FAQ</h4>
-      <h4 class="bottom_text">Contact Us</h4>
-      <h4 class="bottom_text">How It Works</h4>
-      <h4 class="bottom_text">Help</h4>
-    </div>
-    
-    <div class="col-md-6">
-      <div class="row">
-        <h3 style="text-align:center; margin-bottom:3px; font-size:30px;"><strong>JOIN US ON:</strong></h3>
-        <div id="whiteLine2"></div>
-      </div>
-      <div class="row" style="text-align:center;">
-        <img src="./images/Facebook.png" class="connect_image"><img src="./images/LinkedIn.png" class="connect_image"><img src="./images/Twitter.png" class="connect_image">
-      </div>
-      <div class="row" style="text-align:center;">
-        <img src="./images/Instagram.png" class="connect_image"><img src="./images/Youtube.png" class="connect_image"><img src="./images/Google.png" class="connect_image">
-      </div>
-    </div>
-  </div>
-  <div style="margin-left:20px !important;"class="row col-md-12">
-    <h3 style="text-align:left"><img src="./images/Copyright.png" width="25px" height="25px" style="margin-bottom:5px; margin-right:3px;">2016 Mentor Funding, LLC | All Rights Reserved</h3>
   </div>
 </div>
 
