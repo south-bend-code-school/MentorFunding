@@ -12,6 +12,7 @@ firebase.initializeApp(config);
 window.onload = function(){
   //check if button pressed
   document.getElementById('startApp').addEventListener('click', startApp, false);
+  document.getElementById('findMentor').addEventListener('click', startMentor, false);
 
   //get name to display at top instead of sign in
   firebase.auth().onAuthStateChanged( function(user) {
@@ -35,9 +36,11 @@ function signIn(){
 }
 
 function userPage(){
-  window.location = "./views/userProfile.html";
+  window.location = "./views/myProfile.html";
 } 
 function startApp(){
   window.location = "./views/personalInformation.html";
 }
-
+function startMentor(){
+  window.location = "./views/mentorship.html";
+}

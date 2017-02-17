@@ -15,7 +15,25 @@ window.onload = function(){
   var user = firebase.auth().currentUser;
   var userId = user.uid;
   firebase.database().ref('/Users/' + userId+'/personalInfo/').once('value').then(function(snapshot) {
-    var username = Object(snapshot.val()).firstName;
+    var obj = Object(snapshot.val());
+    var first = obj.firstName;
+    var last = obj.lastName;
+    var name = first + last;
+    //console.log(name);
   });
+  firebase.database().ref('/Users/' + userId+'/schoolInfo/').once('value').then(function(snapshot) {
+    var obj = Object(snapshot.val());
+    //console.log(obj);
+    var school = obj.school;
+    var program = obj.undergraduateprogram;
+    var graduation_date = obj.undergradGraduation;
+  });
+  /*firebase.database().ref('/Users/' + userId+'/employmentInfo/').once('value').then(function(snapshot) {
+    var obj = Object(snapshot.val());
+    console.log(obj);
+    var job;
+    var grad;
+  });*/
+  
 }
 
