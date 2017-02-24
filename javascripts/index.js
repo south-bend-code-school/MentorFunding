@@ -17,10 +17,6 @@ window.onload = function(){
   //get name to display at top instead of sign in
   firebase.auth().onAuthStateChanged( function(user) {
     if (user) {
-      var name = user.email;
-      var username = name.split("@")[0];
-      try{ username = username.split(".")[0];} catch (err) { console.log(err);}
-      user.updateProfile({displayName: username}).catch(function(error){console.log(error)}); 
       var html_name = document.getElementById('signIn');
       html_name.innerHTML = user.displayName;
       //show user name near login (get inner HTML of that div
