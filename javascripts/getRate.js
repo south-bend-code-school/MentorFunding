@@ -63,7 +63,7 @@ function proceed(){
   //var user = firebase.auth().currentUser;
   //firebase.database().ref('Users/'+user.uid+'/loanInfo').set(info);
 
-  window.location = "apply.html";
+  window.location = "upload.html";
 
 }
 
